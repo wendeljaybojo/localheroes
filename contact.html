@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+     
+   <section class="contact">
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="image/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">CONTACT US</h3>
+          <p class="text">
+            Contact us if you have any concern or problems
+            you can contact our social media account!!
+
+            THANK YOU!!
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="image/location.png" class="icon" alt="" />
+              <p>Ustp_Claveria Misamis Oriental</p>
+            </div>
+            <div class="information">
+              <img src="image/email.png" class="icon" alt="" />
+              <p>localhero@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="image/phone.png" class="icon" alt="" />
+              <p>09203779220</p>
+            </div>
+          </div>
+
+        <div class="buttons">
+                  <div class="row">
+            <button class="facebook">
+            <span><i class="fab fa-facebook-f"></i></span>
+            facebook</button>
+            <button class="instagram">
+            <span><i class="fab fa-instagram"></i></span>
+            Instagram</button>
+         </div>
+          </div>
+          <a href="home.html" class="back">back</a>
+        </div>
+     </section>
+     <footer>
+    <p>All rights reserve 2024</p>
+    <p>Disclaimer: The content on this website is for educational purposes only. While we strive to provide accurate and up-to-date information, it should not be considered as professional advice. Users are encouraged to seek professional guidance for specific concerns or questions. The creators of this website are not responsible for any actions taken based on the information provided here.</p>
+  </footer>
+
+
+        
+<script>
+  
+  function openLink(url) {
+            window.open(url);
+         }
+
+         // Add click event listeners to buttons
+         document.querySelectorAll('.buttons .row button').forEach(button => {
+            button.addEventListener('click', function() {
+               switch (button.className) {
+                  case 'facebook':
+                     openLink('https://www.facebook.com/profile.php?id=61560925791722');
+                     break;
+                  case 'instagram':
+                     openLink('https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Flocal_hero.12%3Figsh%3DbnphandhODUyb3Nq%26fbclid%3DIwZXh0bgNhZW0CMTAAAR3C8dx7ShhkN4RP42Jk8BDjIBHhRn9fuUQyw0T3sG8x4ROajYrNsEVNkfQ_aem_AcbBMM8likf8fFekCCYzkZR3o0JeTKAR93yXwFiurQ4vJplxpylsBhPUndGO9WOxjAE-0aaMyhmGJzUi4XPSRmMo&h=AT1BeFjUj5ZIxeUR8cdEdZKN-WkDgxsH_CjU-fMk4PbNKQRYxvApA2krVDSnRYpUpjgNxtnpW7pjkvpU2hQ42pf_cXGBdYPvzbdQFs7SSpqNobOP98JOuL40PBhqr0P_I7eGtQ');
+                     break;
+                  
+               }
+            });
+         });
+</script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
